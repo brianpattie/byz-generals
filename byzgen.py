@@ -2,10 +2,11 @@ import sys
 import threading
 import queue
 
+# Nodes of the tree.  Implemented as recursive dictionaries.
 class OrderNode():
 
-    def __init__(self, value):
-        self.value = value
+    def __init__(self):
+        self.value = None
         self.dict = {}
 
     # Returns the order (a string)
@@ -43,7 +44,7 @@ class OrderNode():
             return
 
         if order_path[0] not in self.dict.keys():
-            self.dict[order_path[0]] = OrderNode(None)
+            self.dict[order_path[0]] = OrderNode()
 
         self.dict[order_path[0]].insert(order, order_path[1:])
 
@@ -51,7 +52,7 @@ class OrderNode():
 class OrderTree():
 
     def __init__(self):
-        self.root = OrderNode(None)
+        self.root = OrderNode()
         self.num_nodes = 0
 
     def insert(self, order, order_path):
