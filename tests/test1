@@ -1,0 +1,7 @@
+Test 1: Constraints satisfied
+py byzgen.py LLLT ATTACK 1
+
+Loyal General   0 took action ATTACK
+Loyal General   2 took action ATTACK
+Traitor General 3 took action ATTACK
+Loyal General   1 took action ATTACK

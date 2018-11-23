@@ -1,0 +1,13 @@
+Test 4: Constraints satisfied
+py byzgen.py TLTLLTLLLL ATTACK 3
+
+Traitor General 0 took action ATTACK
+Loyal General   7 took action RETREAT
+Traitor General 2 took action RETREAT
+Loyal General   9 took action RETREAT
+Loyal General   4 took action RETREAT
+Loyal General   8 took action RETREAT
+Loyal General   3 took action RETREAT
+Traitor General 5 took action ATTACK
+Loyal General   1 took action RETREAT
+Loyal General   6 took action RETREAT
